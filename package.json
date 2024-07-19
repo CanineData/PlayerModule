@@ -1,6 +1,6 @@
 {
   "name": "@caninedata/player-module-types",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "main": "out/init.lua",
   "scripts": {
