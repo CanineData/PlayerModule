@@ -1,5 +1,5 @@
-import ControlModule, * as ControlTypes from "./ControlModules"
-import CameraModule, * as CameraTypes from "./CameraModules"
+import ControlModule from "./ControlModules"
+import CameraModule from "./CameraModules"
 
 export default class PlayerModule {
     private cameras: CameraModule
@@ -9,4 +9,5 @@ export default class PlayerModule {
     public GetControls: (this: PlayerModule) => ControlModule
 }
 
-export { ControlTypes, CameraTypes }
+export * from './CameraModules'
+export * from './ControlModules'
