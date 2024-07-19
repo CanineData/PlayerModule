@@ -1,0 +1,11 @@
+{
+  "name": "playermodule",
+  "version": "1.0.0",
+  "description": "Types for the built in roblox player module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CanineData",
+  "license": "MIT"
+}
