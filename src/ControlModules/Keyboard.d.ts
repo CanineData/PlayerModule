@@ -14,10 +14,10 @@ export default class Keyboard extends BaseCharacterController {
 
     public jumpEnabled: boolean
 
-    public Enable: (this: typeof Keyboard, enable: boolean) => boolean
-    public UpdateMovement: (this: typeof Keyboard, inputState: Enum.UserInputState) => unknown
-    public BindContextActions: (this: typeof Keyboard) => unknown
-    public UnbindContextActions: (this: typeof Keyboard) => unknown
-    public ConnectFocusEventListeners: (this: typeof Keyboard) => unknown
-    public DisconnectFocusEventListeners: (this: typeof Keyboard) => unknown
+    public Enable: (this: Keyboard, enable: boolean) => boolean
+    public UpdateMovement: (this: Keyboard, inputState: Enum.UserInputState) => unknown
+    public BindContextActions: (this: Keyboard) => unknown
+    public UnbindContextActions: (this: Keyboard) => unknown
+    public ConnectFocusEventListeners: (this: Keyboard) => unknown
+    public DisconnectFocusEventListeners: (this: Keyboard) => unknown
 }

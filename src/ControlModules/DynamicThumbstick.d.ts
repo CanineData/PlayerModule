@@ -27,18 +27,18 @@ export default class DynamicThumbstick extends BaseCharacterController {
     public tweenInAlphaStart?: number
     public TweenOutAlphaStart?: number
 
-    public Enable: (this: typeof DynamicThumbstick, enable: boolean, uiParentFrame: Frame) => boolean
-    public FadeThumbstick: (this: typeof DynamicThumbstick, visible: boolean) => unknown
-    public FadeThumbstickFrame: (this: typeof DynamicThumbstick, fadeDuration: number, fadeRation: number) => unknown
-    public DoFadeInBackground: (this: typeof DynamicThumbstick) => unknown
-    public DoMove: (this: typeof DynamicThumbstick, direction: Vector3) => unknown
-    public LayoutMiddleImages: (this: typeof DynamicThumbstick, startPos: Vector3, endPos: Vector3) => unknown
-    public MoveStick: (this: typeof DynamicThumbstick, pos: Vector2) => unknown
-    public BindContextActions: (this: typeof DynamicThumbstick) => unknown
-    public UnbindContextActions: (this: typeof DynamicThumbstick) => unknown
-    public Create: (this: typeof DynamicThumbstick, parentFrame: GuiBase2d) => unknown
+    public Enable: (this: DynamicThumbstick, enable: boolean, uiParentFrame: Frame) => boolean
+    public FadeThumbstick: (this: DynamicThumbstick, visible: boolean) => unknown
+    public FadeThumbstickFrame: (this: DynamicThumbstick, fadeDuration: number, fadeRation: number) => unknown
+    public DoFadeInBackground: (this: DynamicThumbstick) => unknown
+    public DoMove: (this: DynamicThumbstick, direction: Vector3) => unknown
+    public LayoutMiddleImages: (this: DynamicThumbstick, startPos: Vector3, endPos: Vector3) => unknown
+    public MoveStick: (this: DynamicThumbstick, pos: Vector2) => unknown
+    public BindContextActions: (this: DynamicThumbstick) => unknown
+    public UnbindContextActions: (this: DynamicThumbstick) => unknown
+    public Create: (this: DynamicThumbstick, parentFrame: GuiBase2d) => unknown
 
     public InputInFrame: (inputObject: InputObject) => boolean
 
-    public OnInputEnded: (this: typeof DynamicThumbstick) => unknown
+    public OnInputEnded: (this: DynamicThumbstick) => unknown
 }

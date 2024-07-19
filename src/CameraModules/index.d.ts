@@ -21,24 +21,24 @@ export default class CameraModule {
     public cameraTypeChangedConn: RBXScriptConnection
 
 
-    public ActivateOcclusionModule: (this: typeof CameraModule, occlusionMode: Enum.DevCameraOcclusionMode) => unknown
-    public ActivateCameraController: (this: typeof CameraModule, cameraMovementMode: unknown, legacyCameraType?: Enum.CameraType) => unknown
-    public Update: (this: typeof CameraModule, dt: number) => unknown
+    public ActivateOcclusionModule: (this: CameraModule, occlusionMode: Enum.DevCameraOcclusionMode) => unknown
+    public ActivateCameraController: (this: CameraModule, cameraMovementMode: unknown, legacyCameraType?: Enum.CameraType) => unknown
+    public Update: (this: CameraModule, dt: number) => unknown
 
-    public OnCameraSubjectChanged: (this: typeof CameraModule) => unknown
-    public OnCameraTypeChanged: (this: typeof CameraModule, newCameraType: Enum.CameraType) => unknown
-    public OnCurrentCameraChanged: (this: typeof CameraModule) => unknown
-    public OnLocalPlayerCameraPropertyChanged: (this: typeof CameraModule, propertyName: string) => unknown
-    public OnUserGameSettingsPropertyChanged: (this: typeof CameraModule, propertyName: string) => unknown
-    public OnCharacterAdded: (this: typeof CameraModule, char: Model, player: Player) => unknown
-    public OnCharacterRemoving: (this: typeof CameraModule, char: Model, player: Player) => unknown
-    public OnPlayerAdded: (this: typeof CameraModule, player: Player) => unknown
-    public OnMouseLockToggled: (this: typeof CameraModule) => unknown
+    public OnCameraSubjectChanged: (this: CameraModule) => unknown
+    public OnCameraTypeChanged: (this: CameraModule, newCameraType: Enum.CameraType) => unknown
+    public OnCurrentCameraChanged: (this: CameraModule) => unknown
+    public OnLocalPlayerCameraPropertyChanged: (this: CameraModule, propertyName: string) => unknown
+    public OnUserGameSettingsPropertyChanged: (this: CameraModule, propertyName: string) => unknown
+    public OnCharacterAdded: (this: CameraModule, char: Model, player: Player) => unknown
+    public OnCharacterRemoving: (this: CameraModule, char: Model, player: Player) => unknown
+    public OnPlayerAdded: (this: CameraModule, player: Player) => unknown
+    public OnMouseLockToggled: (this: CameraModule) => unknown
 
-    public ShouldUseVehicleCamera: (this: typeof CameraModule) => boolean
+    public ShouldUseVehicleCamera: (this: CameraModule) => boolean
 
-    public GetCameraControlChoice: (this: typeof CameraModule) => Enum.ComputerCameraMovementMode | Enum.DevComputerCameraMovementMode
-    public GetCameraMovementModeFromSettings: (this: typeof CameraModule) => Enum.ComputerCameraMovementMode | Enum.DevComputerCameraMovementMode
+    public GetCameraControlChoice: (this: CameraModule) => Enum.ComputerCameraMovementMode | Enum.DevComputerCameraMovementMode
+    public GetCameraMovementModeFromSettings: (this: CameraModule) => Enum.ComputerCameraMovementMode | Enum.DevComputerCameraMovementMode
 }
 
 export { VehicleCamera, LegacyCamera, ClassicCamera, OrbitalCamera, VRCamera, VRVehicleCamera, Poppercam, Invisicam, TransparencyController, MouseLockController }

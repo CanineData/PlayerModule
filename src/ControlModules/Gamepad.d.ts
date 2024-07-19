@@ -14,12 +14,12 @@ export default class Gamepad extends BaseCharacterController {
     private gamepadDisconnectedConn: RBXScriptConnection
 
     public Enable: (enable: boolean) => boolean
-    public GetHighestPriorityGamepad: (this: typeof Gamepad) => Enum.UserInputType
-    public BindContextActions: (this: typeof Gamepad) => boolean
-    public UnbindContextActions: (this: typeof Gamepad) => boolean
+    public GetHighestPriorityGamepad: (this: Gamepad) => Enum.UserInputType
+    public BindContextActions: (this: Gamepad) => boolean
+    public UnbindContextActions: (this: Gamepad) => boolean
 
-    public ConnectGamepadConnectionListeners: (this: typeof Gamepad) => unknown
-    public DisconnectGamepadConnectionListeners: (this: typeof Gamepad) => unknown
+    public ConnectGamepadConnectionListeners: (this: Gamepad) => unknown
+    public DisconnectGamepadConnectionListeners: (this: Gamepad) => unknown
 
-    public OnCurrentGamepadDisconnected: (this: typeof Gamepad) => unknown
+    public OnCurrentGamepadDisconnected: (this: Gamepad) => unknown
 }

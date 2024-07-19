@@ -27,29 +27,29 @@ export default class ControlModule {
     public playerGui: PlayerGui | undefined
     public touchGui: ScreenGui | undefined
 
-    public GetMoveVector: (this: typeof ControlModule) => Vector3
-    public GetEstimatedVRTorsoFrame: (this: typeof ControlModule) => CFrame
-    public GetActiveController: (this: typeof ControlModule) => typeof this.activeController
-    public getGamepadRightThumbstickPosition: (this: typeof ControlModule) => Vector3
-    public GetClickToMoveController: (this: typeof ControlModule) => ClickToMoveController
+    public GetMoveVector: (this: ControlModule) => Vector3
+    public GetEstimatedVRTorsoFrame: (this: ControlModule) => CFrame
+    public GetActiveController: (this: ControlModule) => Controller
+    public getGamepadRightThumbstickPosition: (this: ControlModule) => Vector3
+    public GetClickToMoveController: (this: ControlModule) => ClickToMoveController
 
-    public UpdateActiveControlModuleEnabled: (this: typeof ControlModule) => unknown
-    public UpdateTouchGuiVisibility: (this: typeof ControlModule) =>  unknown
-    public updateVRMoveVector: (this: typeof ControlModule, moveVector: Vector3) => Vector3
-    public Enable: (this: typeof ControlModule, enable?: boolean) => unknown
-    public Disable: (this: typeof ControlModule) => unknown
-    public SelectComputerMovementModule: (this: typeof ControlModule) => LuaTuple<unknown[]>
-    public SelectTouchModule: (this: typeof ControlModule) => LuaTuple<unknown[]>
-    public calculateRawMoveVector: (this: typeof ControlModule, humanoid: Humanoid, cameraRelativeMoveVector: Vector3) => Vector3
-    public SwitchToController: (this: typeof ControlModule, controlModule: unknown) => unknown
-    public CreateTouchGuiContainer: (this: typeof ControlModule) => unknown
+    public UpdateActiveControlModuleEnabled: (this: ControlModule) => unknown
+    public UpdateTouchGuiVisibility: (this: ControlModule) =>  unknown
+    public updateVRMoveVector: (this: ControlModule, moveVector: Vector3) => Vector3
+    public Enable: (this: ControlModule, enable?: boolean) => unknown
+    public Disable: (this: ControlModule) => unknown
+    public SelectComputerMovementModule: (this: ControlModule) => LuaTuple<unknown[]>
+    public SelectTouchModule: (this: ControlModule) => LuaTuple<unknown[]>
+    public calculateRawMoveVector: (this: ControlModule, humanoid: Humanoid, cameraRelativeMoveVector: Vector3) => Vector3
+    public SwitchToController: (this: ControlModule, controlModule: unknown) => unknown
+    public CreateTouchGuiContainer: (this: ControlModule) => unknown
 
-    public OnRenderStepped: (this: typeof ControlModule, dt: number) => unknown
-    public OnHumanoidSeated: (this: typeof ControlModule, char: Model) => unknown
-    public OnCharacterRemoving: (this: typeof ControlModule, char: Model) => unknown
-    public OnLastInputTypeChanged: (this: typeof ControlModule, newLastInputType: Enum.UserInputType) => unknown
-    public OnComputerMovementModeChange: (this: typeof ControlModule) => unknown
-    public OnTouchMovementModeChange: (this: typeof ControlModule) => unknown
+    public OnRenderStepped: (this: ControlModule, dt: number) => unknown
+    public OnHumanoidSeated: (this: ControlModule, char: Model) => unknown
+    public OnCharacterRemoving: (this: ControlModule, char: Model) => unknown
+    public OnLastInputTypeChanged: (this: ControlModule, newLastInputType: Enum.UserInputType) => unknown
+    public OnComputerMovementModeChange: (this: ControlModule) => unknown
+    public OnTouchMovementModeChange: (this: ControlModule) => unknown
 }
 
 export { ClickToMoveController, TouchJumpController, DynamicThumbstick, TouchThumbstick, Gamepad, Keyboard }
