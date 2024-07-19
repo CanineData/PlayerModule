@@ -5,8 +5,8 @@ declare class PlayerModule {
     private cameras: CameraModule
     private controls: ControlModule
 
-    public GetCameras: () => CameraModule
-    public GetControls: () => ControlModule
+    public GetCameras: (this: typeof PlayerModule) => CameraModule
+    public GetControls: (this: typeof PlayerModule) => ControlModule
 }
 
 declare const module: PlayerModule
