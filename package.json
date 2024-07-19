@@ -1,11 +1,40 @@
 {
-  "name": "playermodule",
-  "version": "1.0.0",
-  "description": "Types for the built in roblox player module",
-  "main": "index.js",
+  "name": "@rbxts/player-module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "out/init.lua",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "npm run build"
   },
-  "author": "CanineData",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanineData62816/PlayerModule.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CanineData62816/PlayerModule/issues"
+  },
+  "homepage": "https://github.com/CanineData62816/PlayerModule#readme",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.3.0-types.1",
+    "@rbxts/types": "^1.0.790",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "roblox-ts": "^2.3.0",
+    "typescript": "^5.5.3"
+  }
 }
