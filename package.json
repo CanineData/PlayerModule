@@ -1,5 +1,5 @@
 {
-  "name": "@caninedata/player-module-types",
+  "name": "@rbxts/player-module-types",
   "version": "0.1.6",
   "description": "",
   "main": "out/init.lua",
