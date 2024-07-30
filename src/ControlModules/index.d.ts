@@ -1,4 +1,4 @@
-import TouchJumpController from "./TouchJumpController"
+import TouchJumpController from "./TouchJump"
 import ClickToMoveController from "./ClickToMoveController"
 import DynamicThumbstick from "./DynamicThumbstick"
 import TouchThumbstick from "./TouchThumbstick";
