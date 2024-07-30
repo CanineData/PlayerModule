@@ -1,7 +1,7 @@
 {
-  "name": "@caninedata/player-module-types",
-  "version": "0.1.6",
-  "description": "",
+  "name": "@rbxts/player-module-types",
+  "version": "0.1.0",
+  "description": "This package provides TypeScript type definitions for the Roblox built-in PlayerModule. It is designed to be used with roblox-ts.",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
