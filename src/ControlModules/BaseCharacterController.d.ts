@@ -3,10 +3,10 @@ import { ClickToMoveController, DynamicThumbstick, TouchThumbstick, Gamepad, Key
 export type CharacterController = BaseCharacterController | ClickToMoveController | DynamicThumbstick | TouchThumbstick | Gamepad | Keyboard
 
 export abstract class BaseCharacterController {
-    private enabled: boolean
-    private moveVector: Vector3
-    private moveVectorIsCameraRelative: boolean
-    private isJumping: boolean
+    public enabled: boolean
+    public moveVector: Vector3
+    public moveVectorIsCameraRelative: boolean
+    public isJumping: boolean
     private connections
 
     public OnRenderStepped: (this: CharacterController, dt: number) => unknown
